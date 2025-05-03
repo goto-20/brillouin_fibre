@@ -53,6 +53,3 @@ np.savetxt(path + '/n.csv', np.array([n_eff]))
 ## Saving the mesh and markers
 File(path + '/mesh.xml') << mesh
 File(path + '/markers.xml') << markers
-
-EM_Solve.py
-Displaying EM_Solve.py.
