@@ -1,2 +1,1 @@
-# Finite Element Methods 
-# Brillouin Scattering in Optical Waveguide
+# Simulating Brillouin Scattering in Optical Waveguide
