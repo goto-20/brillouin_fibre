@@ -26,7 +26,7 @@ First, we make sure that the SBS process for SMF-28 is in agreement with known e
     <img width="33%" src="images/SM.png">
 </p>
 
-Plugging in the material constants for SMF-28 (in [Appendix](#-Appendix)), we get the following Electric Field distribution:
+Plugging in the material constants for SMF-28 (in [Appendix](#appendix)), we get the following Electric Field distribution:
 
 <p align="center" width="100%", title="SMF28 Electric Field">
     <img width="50%" src="images/SMF_E.png">
@@ -52,7 +52,7 @@ which gives rise to the following strain tensor distribution (only plotting $S_{
     <img width="50%" src="images/Strain.png">
 </p>
 
-Plugging in the material constants (in [Appendix](#-Appendix)), we can then characterize the shift in the SBS peak as a function of net load (kg) and compare the results with experimental data (Blue curve):
+Plugging in the material constants (in [Appendix](#appendix)), we can then characterize the shift in the SBS peak as a function of net load (kg) and compare the results with experimental data (Blue curve):
 
 <p align="center" width="100%", title="Shift in SBS peak (Orange: Simulation, Blue: Experimental)">
     <img width="50%" src="images/Trend.png">
