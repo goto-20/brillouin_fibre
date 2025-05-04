@@ -1,7 +1,7 @@
 from dolfin import *
-from mesh_builder import *
-from eigen_builder import *
-from calc_strain import *
+from functions.mesh_builder import *
+from functions.eigen_builder import *
+from functions.calc_strain import *
 import numpy as np
 import matplotlib.pyplot as plt
 
