@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0" version="26.2.14">
+  <diagram name="Page-1" id="T9aFkhOytMRxekdAajkF">
+    <mxGraphModel dx="1426" dy="791" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8r73qjz7pRCt6fFGnShG-4" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="68" y="35" width="320" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="UrJTJeA_TvK0Ti9fm7qZ-2" value="&lt;div&gt;Calculate Strain \(S_{kl}\)&lt;/div&gt;&lt;div&gt;on Waveguide&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="138" y="80" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;strokeWidth=3;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" source="8r73qjz7pRCt6fFGnShG-1" target="8r73qjz7pRCt6fFGnShG-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-1" value="&lt;div&gt;Get Refractive index &lt;br&gt;&lt;/div&gt;&lt;div&gt;profile (\(\epsilon_{ij}\))&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="138" y="200" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=3;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" source="8r73qjz7pRCt6fFGnShG-2" target="8r73qjz7pRCt6fFGnShG-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-2" value="&lt;div&gt;Get Electric Field from Maxwell&#39;s Equation&lt;/div&gt;&lt;div&gt;(eigenvalue solver)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="138" y="320" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-5" value="EM_Solve.py" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="298" y="415" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-6" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" source="8r73qjz7pRCt6fFGnShG-1" target="8r73qjz7pRCt6fFGnShG-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="358" y="440" as="sourcePoint" />
+            <mxPoint x="408" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" source="UrJTJeA_TvK0Ti9fm7qZ-2" target="8r73qjz7pRCt6fFGnShG-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="358" y="440" as="sourcePoint" />
+            <mxPoint x="408" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-9" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="465" y="480" width="320" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-13" value="SBS_Solve.py" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="695" y="860" width="89" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-17" value="&lt;div&gt;Loop over&lt;/div&gt;&lt;div&gt;Acoustic Frequency&lt;/div&gt;&lt;div&gt;\(\Omega\)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="645" y="510" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-18" value="End loop" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="645" y="760" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" source="8r73qjz7pRCt6fFGnShG-19" target="8r73qjz7pRCt6fFGnShG-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-19" value="" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="685" y="662.5" width="40" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" source="8r73qjz7pRCt6fFGnShG-17" target="8r73qjz7pRCt6fFGnShG-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="755" y="560" as="sourcePoint" />
+            <mxPoint x="805" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" source="8r73qjz7pRCt6fFGnShG-19" target="8r73qjz7pRCt6fFGnShG-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="555" y="600" as="sourcePoint" />
+            <mxPoint x="555" y="673" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" source="8r73qjz7pRCt6fFGnShG-22" target="8r73qjz7pRCt6fFGnShG-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-22" value="&lt;div&gt;Solve Acoustic Field from&lt;/div&gt;&lt;div&gt;Elastodynamic Equation&lt;/div&gt;&lt;div&gt;given \(E_k, \epsilon_{ij}\) and \( \Omega\)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="475" y="645" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-34" value="&lt;div&gt;\(E_k\)&lt;/div&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="630" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-35" value="&lt;div&gt;\(\epsilon_{ij}\)&lt;/div&gt;" style="text;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="670" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" source="8r73qjz7pRCt6fFGnShG-36" target="UrJTJeA_TvK0Ti9fm7qZ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-36" value="&lt;div&gt;\(-\sigma_{ij,j}= 0\)&lt;/div&gt;&lt;div&gt;\( \sigma_{ij} = c_{ijkl}S_{kl}\)&lt;/div&gt;&lt;div&gt;\(S_{kl} = \dfrac{1}{2}\left( u_{k,l} + u_{l,k}\right)\)&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="80" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-41" value="&lt;div&gt;\(\epsilon_{ij} = \epsilon^0_{ij} + \delta \epsilon_{ij} \) &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp; \( \epsilon^0_{ij} = n^2 \delta_{ij} \)&lt;div&gt;\(\delta \epsilon_{ij} = -\epsilon^0_{ik} p_{klmn} \epsilon^0_{lj} S_{mn} = -n^4 p_{ijmn} S_{mn}\)&lt;/div&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="485" y="195" width="310" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" source="8r73qjz7pRCt6fFGnShG-41" target="8r73qjz7pRCt6fFGnShG-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="130" as="sourcePoint" />
+            <mxPoint x="370" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-43" value="\(\vec{\nabla} \times \left(\dfrac{1}{\mu}&amp;nbsp;&amp;nbsp; \vec{\nabla} \times \textbf{E} \right) - k_0^2 \epsilon_{ij} E_j = 0\)" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="320" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" target="8r73qjz7pRCt6fFGnShG-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="515" y="360" as="sourcePoint" />
+            <mxPoint x="390" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;fontColor=light-dark(#121212,#FFFFFF);" edge="1" parent="1" source="8r73qjz7pRCt6fFGnShG-47" target="8r73qjz7pRCt6fFGnShG-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8r73qjz7pRCt6fFGnShG-47" value="\(-\rho \Omega^2 u_{i}-&amp;nbsp; \left[c_{ijkl}u_{k,l}+ i\Omega \eta_{ijkl} u_{k,l}\right]_{,j}=\left[\epsilon_{0}\epsilon_{im}\epsilon_{jn}p_{klmn}E^{(1)}_{k}E^{(2)\ast}_{l}\right]_{,j}\)" style="ellipse;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="23" y="740" width="410" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
