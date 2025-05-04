@@ -68,5 +68,5 @@ Table of parameters used in the simulations above:
 
 # References
 
-1) B. Saxena, [Electrostriction in As\(_2\)Se\(_3\)-PMMA Microtapers](https://ruor.uottawa.ca/items/2d06389b-0cbd-4a8a-b387-87a1b95ee676)
+1) B. Saxena, [Electrostriction in As2Se3-PMMA Microtapers](https://ruor.uottawa.ca/items/2d06389b-0cbd-4a8a-b387-87a1b95ee676)
 2) B. Saxena, Chams Baker, Xiaoyi Bao, and Liang Chen, [High birefringent Brillouin frequency shifts in a single-mode As\(_2\)Se\(_3\)-PMMA microtaper induced by a transverse load](https://doi.org/10.1364/OL.44.004789), *Optics Letters*, Vol. 44, Issue 19, pp. 4789-4792 (2019)
