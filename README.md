@@ -1,72 +1,72 @@
 # brillouin_fibre
 
-## Acousto-optics in Optical Waveguides under Mechanical Stress
+## Acousto-Optics in Optical Waveguides under Mechanical Stress
 
-[brillouin_fibre](https://github.com/goto-20/brillouin_fibre) is a simulation environment for calculating Stimulated Brillouin Scattering (SBS) within a 2-D Optical Waveguide. SBS can be described as the process of exciting acoustic waves within a waveguide using two counter-propagating waves.
+[brillouin_fibre](https://github.com/goto-20/brillouin_fibre) is a robust simulation environment designed to calculate **Stimulated Brillouin Scattering (SBS)** within a 2D optical waveguide. SBS refers to the process in which acoustic waves are excited within a waveguide via two counter-propagating optical waves.
 
-<p align="center" width="100%", title="Stimulated Brillouin Scattering (SBS)">
+<p align="center" width="100%" title="Stimulated Brillouin Scattering (SBS)">
     <img width="50%" src="images/SBS.png">
 </p>
 
-[brillouin_fibre](https://github.com/goto-20/brillouin_fibre) combines the linear elastic equation, Maxwell's equations and the elastodynamic equations to fully characterize optical waveguides built from any material in the presence of static mechanical load. The worflow for the simulation is as follows:
+The [brillouin_fibre](https://github.com/goto-20/brillouin_fibre) framework integrates linear elastic equation, Maxwell's equations and elastodynamic equations, providing a comprehensive tool to characterize optical waveguides made from any material under static mechanical loads. The simulation workflow is as follows:
 
-<p align="center" width="100%", title="Workflow for brillouin_fibre">
+<p align="center" width="100%" title="Workflow for brillouin_fibre">
     <img width="75%" src="images/SBS_WorkFlow.png">
 </p>
 
-The simulation environment is built over the [FEniCS](https://fenicsproject.org/) computing platform for solving partial differential equations (PDEs) with the finite element method (FEM).
+This environment is built on the [FEniCS](https://fenicsproject.org/) computing platform, which leverages the finite element method (FEM) to solve partial differential equations (PDEs).
 
 ## Examples
 
 ### Single-Mode Fiber (SMF-28) (Silica)
 
-First, we make sure that the SBS process for SMF-28 is in agreement with known experimental values. The waveguide is built using the [gmsh](https://gmsh.info/) library to build a core and a cladding region within the waveguide. We also include mesh-refining around the boundary conditions (outer perimiter, and between the core-cladding region).
+To validate the SBS process for the SMF-28 fiber, we ensure that the simulation results align with established experimental data. The optical waveguide is constructed using the [gmsh](https://gmsh.info/) library, which defines the core and cladding regions. A mesh refinement is applied around the boundary conditions, including the outer perimeter and the core-cladding interface.
 
-<p align="center" width="100%", title="Mesh for Optical Waveguide with Core/Cladding regions">
+<p align="center" width="100%" title="Mesh for Optical Waveguide with Core/Cladding Regions">
     <img width="33%" src="images/SM.png">
 </p>
 
-Plugging in the material constants for SMF-28 (in [Appendix](#appendix)), we get the following Electric Field distribution:
+By incorporating the material constants for SMF-28 (listed in the [Appendix](#appendix)), we obtain the following electric field distribution:
 
-<p align="center" width="100%", title="SMF28 Electric Field">
-    <img width="50%" src="images/SMF_E.png">
+<p align="center" width="100%" title="SMF28 Electric Field">
+    <img width="60%" src="images/SMF_E.png">
 </p>
 
-which when subjected to a Pump and Stokes Wave, gives rise to the following SBS spectrum (left), and the acoustic wave distribution (right):
+When subjected to a pump and Stokes wave, the SBS spectrum (left) and acoustic wave distribution (right) are generated as shown below:
 
-<p align="center" width="100%", title="SBS within SMF28">
-    <img width="50%" src="images/SBS_SMF.png">
+<p align="center" width="100%" title="SBS in SMF-28">
+    <img width="60%" src="images/SBS_SMF.png">
 </p>
 
-### Chalcogenide-PMMA fibers
+### Chalcogenide-PMMA Fibers
 
-Known for their high sensitivity to mechanical load, we simulate SBS for the Chalcogenide-PMMA fibre (Chalcogenide core with PMMA cladding) under external mechanical load, making full use of the features of [brillouin_fibre](https://github.com/goto-20/brillouin_fibre). We assume two pressure points on the fiber due to the experimental setup below:
+Chalcogenide-PMMA fibers are known for their exceptional sensitivity to mechanical stress. In this simulation, we explore the SBS phenomenon in a Chalcogenide-PMMA fiber (Chalcogenide core with PMMA cladding) under external mechanical loading, taking full advantage of the features offered by [brillouin_fibre](https://github.com/goto-20/brillouin_fibre). The fiber is subjected to two pressure points, as shown in the experimental setup below:
 
-<p align="center" width="100%", title="Mechanical Load on Chalcogenide-PMMA fibres">
+<p align="center" width="100%" title="Mechanical Load on Chalcogenide-PMMA Fibers">
     <img width="50%" src="images/Load.png">
 </p>
 
-which gives rise to the following strain tensor distribution (only plotting $S_{yy}$) that impacts the refractive index near the core of the material:
+This load induces a strain tensor distribution (shown for $S_{yy}$ only) that alters the refractive index near the core of the fiber:
 
-<p align="center" width="100%", title="Strain due to mechanical load">
+<p align="center" width="100%" title="Strain Due to Mechanical Load">
     <img width="50%" src="images/Strain.png">
 </p>
 
-Plugging in the material constants (in [Appendix](#appendix)), we can then characterize the shift in the SBS peak as a function of net load (kg) and compare the results with experimental data (Blue curve):
+By incorporating the relevant material constants (found in the [Appendix](#appendix)), we can characterize the shift in the SBS peak as a function of the net load (in kg) and compare the results to experimental data (shown as the blue curve):
 
-<p align="center" width="100%", title="Shift in SBS peak (Orange: Simulation, Blue: Experimental)">
+<p align="center" width="100%" title="Shift in SBS Peak (Orange: Simulation, Blue: Experimental)">
     <img width="50%" src="images/Trend.png">
 </p>
 
 ## Appendix
 
-Table of parameters used for the simulations above:
+Table of parameters used in the simulations above:
 
-<p align="center" width="100%", title="Shift in SBS peak (Orange: Simulation, Blue: Experimental)">
+<p align="center" width="100%" title="Material Constants and Parameters for Simulations">
     <img width="50%" src="images/table.png">
 </p>
 
 ## References
-- B. Saxena, [Electrostriction in As2Se3-PMMA Microtapers](https://ruor.uottawa.ca/items/2d06389b-0cbd-4a8a-b387-87a1b95ee676)
-- B. Saxena, Chams Baker, Xiaoyi Bao, and Liang Chen, [High birefringent Brillouin frequency shifts in a single-mode As2Se3-PMMA microtaper induced by a transverse load](https://doi.org/10.1364/OL.44.004789), Vol. 44, Issue 19, pp. 4789-4792 (2019)
 
+- B. Saxena, [Electrostriction in As\(_2\)Se\(_3\)-PMMA Microtapers](https://ruor.uottawa.ca/items/2d06389b-0cbd-4a8a-b387-87a1b95ee676)
+- B. Saxena, Chams Baker, Xiaoyi Bao, and Liang Chen, [High birefringent Brillouin frequency shifts in a single-mode As\(_2\)Se\(_3\)-PMMA microtaper induced by a transverse load](https://doi.org/10.1364/OL.44.004789), *Optics Letters*, Vol. 44, Issue 19, pp. 4789-4792 (2019)
