@@ -1,12 +1,14 @@
 # brillouin_fibre
 
-## Acousto-Optics in Optical Waveguides under Mechanical Stress
+## Introduction
 
 [brillouin_fibre](https://github.com/goto-20/brillouin_fibre) is a robust simulation environment designed to calculate **Stimulated Brillouin Scattering (SBS)** within a 2D optical waveguide. SBS refers to the process in which acoustic waves are excited within a waveguide via two counter-propagating optical waves.
 
 <p align="center" width="100%" title="Stimulated Brillouin Scattering (SBS)">
     <img width="50%" src="images/SBS.png">
 </p>
+
+## Simulation Workflow
 
 The [brillouin_fibre](https://github.com/goto-20/brillouin_fibre) framework integrates linear elastic equation, Maxwell's equations and elastodynamic equations, providing a comprehensive tool to characterize optical waveguides made from any material under static mechanical loads. The simulation workflow is as follows:
 
